@@ -8,17 +8,53 @@
         <title>Site creer en html 5</title>
         <link rel="stylesheet" href="style.css">
     </head>
+    <ul>            
+        <li><a href="#">Accueil</a></li>      
+        <li><a href="#">Blog</a></li>       
+        <li><a href="#">CV</a></li>       
+        </ul>  
     <body>
         <h1>Bienvenue sur ma page</h1>
-        <p>Ceci est le contenu de mon premier paragraphe</p>
-        <p>Ceci est le contenu de mon deuxième paragraphe</p>
-        <h2>Voilà mon sous-titre 1</h2>
-        <h3>Une sous-partie</h3>
-        <p>Un paragraphe</p>
-        <h3>Une autre sous-partie</h3>
-        <p>Tiens encore un paragraphe</p>
-        <h2>Voilà mon sous-titre 2</h2>
-        …
+        <p>C'est moi, le Devellopeur des application web/site web ! Je suis né un 14 juillet 1999.</p>
+        <p>Tout ce que vous voyez est un début</p>
+        <fieldset>
+        <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->  
+ 
+        <label for="nom">Quel est votre nom ?</label>     
+        <input type="text" name="nom" id="nom" />     
+        <label for="prenom">Quel est votre prénom ?</label>    
+        <input type="text" name="prenom" id="prenom" />      
+        <label for="email">Quel est votre e-mail ?</label>    
+        <input type="email" name="email" id="email" /> 
+  
+        
+        <form method="post" action="traitement.php">    <p>     
+           <h2> Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br /> </h2>    
+            <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />    
+            <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />    
+            <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />        <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>    </p> </form> 
+            </form>
+            <form method="post" action="traitement.php">    <p>  
+                <label for="pays"> <h3>Dans quel pays habitez-vous ?</h3></label><br />   
+                <select name="pays" id="pays">   
+                <optgroup label="Europe">
+                <option value="france">France</option>      
+                <option value="espagne">Espagne</option>    
+                <option value="italie">Italie</option>       
+                <option value="royaume-uni">Royaume-Uni</option>      </optgroup> 
+                <option value="canada">Canada</option>       
+                <option value="etats-unis">Etats-Unis</option>        
+                <option value="chine">Chine</option>     
+                <option value="japon">BURUNDI</option>        </select>    </p>
+                </form> 
+                <form method="post" action="traitement.php"> 
+                    <p>  <h2>     Cochez les aliments que vous aimez manger :<br />   </h2> 
+                    <input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites</label><br />   
+                    <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />     
+                    <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />    
+                    <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huitres</label>    </p>
+        <input type="submit" value="Envoyer" />
+        </fieldset>  
         <h1>Les fruits rouges</h1>
 <ul>
    <li>Fraises</li>
@@ -33,4 +69,24 @@
    <li>Je retourne me coucher.</li>
 </ol>
     </body>
+    <footer>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row">
+              <div class="large-8 columns">
+                <ul class="social">
+                  <li class="twitter"><a href="#">Follow us on Twitter</a></li>
+                  <li class="facebook"><a href="#">Like us on Facebook</a></li>
+                  
+                </ul>
+    
+                
+              </div>
+              <div class="large-4 columns">
+                <p class="text-right">Copyright (c) 2024, Tous Droits reservees</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 </html>
